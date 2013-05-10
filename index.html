@@ -14,15 +14,23 @@ $(document).ready(function(){
 			clientID: 'a38f8003f4e241a099bb5c1ce8455a0c'
 		};
 
-	$('.exibeFotos').spectragram('getUserFeed', {
+	$('ul').spectragram('getUserFeed', {
 		query: 'm44theus',
-		max: 25,
-		wrapEachWith: '<span></span>'});
+		max: 50,
+		size: 'medium',
+    	wrapEachWith: '<li> </li>' });
 
 });
 </script>
+<style>
+body {margin:0; padding:0;}
+ul {margin:0; padding:0;}
+ul li { float: left; list-style: none; width: 20%; margin-top: -5px;}
+ul li a img {width: 100%;}
+</style>
 </head>
 <body>
-<div class="exibeFotos"></div>
+<ul>
+</ul>
 </body>
 </html>
